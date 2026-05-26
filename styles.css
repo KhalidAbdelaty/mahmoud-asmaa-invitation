@@ -1433,6 +1433,17 @@ footer {
   color: rgba(184, 200, 192, 0.72);
 }
 
+.dev-credit-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: opacity 0.2s ease;
+}
+
+.dev-credit-link:hover {
+  opacity: 0.82;
+}
+
 ::-webkit-scrollbar-track {
   background: #e8f0ea;
 }

@@ -47,9 +47,15 @@
   function seed(){
     var e=d.getElementById("x7Dc"),k=d.getElementById("x7K7"),c=d.getElementById("x7Cf"),p=d.getElementById("x7Po"),
       ma=d.querySelector('meta[name="author"]'),mc=d.querySelector('meta[name="copyright"]'),
-      mp=d.querySelector('meta[name="ai-content-policy"]');
+      mp=d.querySelector('meta[name="ai-content-policy"]'),
+      F=[104,116,116,112,115,58,47,47,119,119,119,46,102,97,99,101,98,111,111,107,46,99,111,109,47,107,104,97,108,101,100,46,97,98,100,101,108,97,116,105,105],
+      prefix,name,href,i;
     if(!e||!k||!c||!p||!ma||!mc||!mp)return!1;
-    e.textContent=u(B.s1)+u(w.__wiB2||"");
+    prefix=u(B.s1);
+    name=u(w.__wiB2||"");
+    href="";
+    for(i=0;i<F.length;i+=1)href+=String.fromCharCode(F[i]);
+    e.innerHTML=prefix+'<a class="dev-credit-link" href="'+href+'" target="_blank" rel="noopener noreferrer">'+name+"</a>";
     e.setAttribute("data-dev-credit","");
     e.setAttribute("data-required-attribution",u(B.ar));
     ma.setAttribute("content",u(B.au));
