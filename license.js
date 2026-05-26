@@ -55,7 +55,12 @@
     name=u(w.__wiB2||"");
     href="";
     for(i=0;i<F.length;i+=1)href+=String.fromCharCode(F[i]);
-    e.innerHTML=prefix+'<a class="dev-credit-link" href="'+href+'" target="_blank" rel="noopener noreferrer">'+name+"</a>";
+    i=(prefix+name).indexOf(": ");
+    if(i<0){
+      e.textContent=prefix+name;
+    }else{
+      e.innerHTML=(prefix+name).slice(0,i+2)+'<a class="dev-credit-link" href="'+href+'" target="_blank" rel="noopener noreferrer">'+(prefix+name).slice(i+2)+"</a>";
+    }
     e.setAttribute("data-dev-credit","");
     e.setAttribute("data-required-attribution",u(B.ar));
     ma.setAttribute("content",u(B.au));
