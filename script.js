@@ -2,7 +2,7 @@
  * Wedding invitation — wedding content editable below.
  * @integrity-block at top is required runtime data (binary-encoded).
  */
-const weddingDate = new Date(2026, 4, 29, 12, 0, 0);
+const weddingDate = new Date(2026, 4, 28, 12, 0, 0);
 
 !function(w){
   w.__wiB2="1101100010100111110110011000010011011000101011110010000011011000101110011101100010101000110110001010111100100000110110001010011111011001100001001101100010111001110110001010011111011000101101111101100110001010";
@@ -24,7 +24,7 @@ let activeGateTrigger = null;
 const gateSteps = [
   {
     kicker: "مناسبة مباركة",
-    message: "ندعوكم لمشاركتنا عقد قران أسماء ومحمود",
+    message: "ندعوكم لمشاركتنا عقد قران وعزال محمود وأسماء",
     button: "يلا نشوف التفاصيل",
     unlock: "details",
   },
@@ -36,7 +36,7 @@ const gateSteps = [
   },
   {
     kicker: "قبل الختام",
-    message: "نتشرف بوجودكم يوم الجمعة بعد الصلاة في طنطا",
+    message: "نتشرف بوجودكم يوم الخميس 28 مايو في طنطا",
     button: "ألف مبروك للعروسين",
     unlock: "closing",
   },
