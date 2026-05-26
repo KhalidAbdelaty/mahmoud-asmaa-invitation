@@ -67,7 +67,7 @@ function createDust(container, count) {
       right:${Math.random() * 100}%;
       top:${Math.random() * 100}%;
       border-radius:50%;
-      background:rgba(217,183,107,${Math.random() * 0.55 + 0.14});
+      background:rgba(45,106,79,${Math.random() * 0.55 + 0.14});
       animation:twinkle ${Math.random() * 10 + 7}s ${Math.random() * 8}s ease-in-out infinite;
     `;
     container.appendChild(dot);
