@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <meta name="ai-content-policy" content="">
+  <meta name="description" content="دعوة عقد أسماء أحمد الدماطي ومحمود محمد فياض">
+  <meta name="theme-color" content="#fff5e6">
+  <meta name="color-scheme" content="light">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="دعوة عقد أسماء ومحمود">
+  <title>دعوة عقد | أسماء ومحمود</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cover" aria-label="غلاف الدعوة">
+    <div class="dust-layer" id="coverDust"></div>
+    <div class="cover-panel">
+      <span class="cover-kicker">دعوة عقد قران</span>
+      <h1 class="cover-title">دعوة عقد</h1>
+      <div class="cover-rule"></div>
+      <p class="cover-names">
+        أسماء أحمد الدماطي
+        <span class="spark">✦</span>
+        محمود محمد فياض
+      </p>
+      <p class="cover-verse">
+        ﴿وَمِن آياتِهِ أَن خَلَقَ لَكُم مِن أَنفُسِكُم أَزواجًا لِتَسكُنوا إِلَيها وَجَعَلَ بَينَكُم مَوَدَّةً وَرَحمَةً إِنَّ في ذلِكَ لَآياتٍ لِقَومٍ يَتَفَكَّرونَ﴾
+      </p>
+      <button class="open-btn" id="openInvitation" type="button">افتح الدعوة</button>
+    </div>
+  </div>
+
+  <div class="video-orb is-hidden" id="videoOrb" aria-label="فيديو الدعوة">
+    <video id="weddingVideo" loop muted playsinline webkit-playsinline preload="metadata" disablepictureinpicture>
+      <source src="assets/wedding-video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <main id="main">
+    <div class="gate-modal" id="gateModal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="gate-card">
+        <span class="gate-kicker" id="gateKicker">رسالة صغيرة</span>
+        <p id="gateMessage">ندعوكم لمشاركتنا هذه المناسبة</p>
+        <button class="gate-confirm" id="gateConfirm" type="button">يلا نشوف التفاصيل</button>
+      </div>
+    </div>
+
+    <section class="hero" id="hero">
+      <div class="heart-field" id="heroHearts"></div>
+      <div class="hero-card">
+        <span class="tagline">✦ بكل الحب ندعوكم ✦</span>
+        <h2 class="hero-title">دعوة عقد</h2>
+        <div class="ornament"></div>
+        <p class="names">أسماء أحمد الدماطي</p>
+        <span class="amp">✦</span>
+        <p class="names">محمود محمد فياض</p>
+        <p class="hero-copy">
+          يتشرفان بدعوتكم لحضور عقد قرانهما، وجودكم يزيد المناسبة بركة وبهجة.
+        </p>
+        <button class="gate-action" type="button" data-gate="0">شوف الرسالة وافتح التفاصيل</button>
+      </div>
+      <div class="scroll-cue" aria-hidden="true">
+        <span>تابع للأسفل</span>
+        <span></span>
+      </div>
+    </section>
+
+    <section class="details gated-section is-locked" id="details">
+      <div class="wrap reveal">
+        <header class="section-head">
+          <span class="eyebrow">✦ العقد ✦</span>
+          <h2 class="section-title">تفاصيل العقد</h2>
+          <div class="ornament"></div>
+        </header>
+
+        <div class="cards">
+          <article class="info-card">
+            <span class="label">التاريخ</span>
+            <p class="value">الجمعة 29 مايو 2026</p>
+            <p class="value" style="font-size:0.95em;margin-top:0.35rem;color:var(--muted)">(ثالث أيام العيد)</p>
+          </article>
+          <article class="info-card">
+            <span class="label">الوقت</span>
+            <p class="value">بعد صلاة الجمعة</p>
+          </article>
+          <article class="info-card wide">
+            <span class="label">المكان</span>
+            <p class="value">طنطا</p>
+          </article>
+        </div>
+
+        <div class="action-row">
+          <a class="primary-btn" href="https://www.google.com/maps/search/%D8%B7%D9%86%D8%B7%D8%A7" target="_blank" rel="noopener">لوكيشن طنطا</a>
+          <button class="outline-btn gate-action" type="button" data-gate="1">كمل للعد التنازلي</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown gated-section is-locked" id="countdown">
+      <div class="wrap reveal">
+        <header class="section-head">
+          <span class="eyebrow">✦ انتظرونا ✦</span>
+          <h2 class="section-title">العد التنازلي للعقد</h2>
+          <div class="ornament"></div>
+        </header>
+
+        <div class="countdown-grid" aria-live="polite">
+          <div class="countdown-card"><span class="countdown-num" id="countDays">00</span><span class="countdown-label">أيام</span></div>
+          <div class="countdown-card"><span class="countdown-num" id="countHours">00</span><span class="countdown-label">ساعات</span></div>
+          <div class="countdown-card"><span class="countdown-num" id="countMinutes">00</span><span class="countdown-label">دقائق</span></div>
+          <div class="countdown-card"><span class="countdown-num" id="countSeconds">00</span><span class="countdown-label">ثواني</span></div>
+        </div>
+        <p class="countdown-done" id="countDone">ألف مبروك للعروسين</p>
+        <div class="action-row">
+          <button class="primary-btn gate-action" type="button" data-gate="2">آخر رسالة للعرسان</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing gated-section is-locked" id="closing">
+      <div class="heart-field" id="closingHearts"></div>
+      <div class="reveal">
+        <div class="closing-rule"></div>
+        <p class="closing-quote">وجودكم يكمّل فرحتنا</p>
+        <p class="closing-copy">نتشرف بحضوركم ومشاركتكم هذه المناسبة المباركة</p>
+
+        <div class="hearts-row" aria-hidden="true">
+          <span class="css-heart small dim pulse-c"></span>
+          <span class="css-heart small mid pulse-b"></span>
+          <span class="css-heart large full pulse-a"></span>
+          <span class="css-heart small mid pulse-b"></span>
+          <span class="css-heart small dim pulse-c"></span>
+        </div>
+
+        <p class="closing-names">أسماء ✦ محمود</p>
+        <div class="closing-rule"></div>
+      </div>
+    </section>
+
+    <script type="application/json" id="x7Cf"></script>
+    <span id="x7Po" hidden aria-hidden="true"></span>
+    <span id="x7K7" hidden aria-hidden="true"></span>
+    <footer>
+      <span>✦ أسماء ومحمود ✦ بكل الحب</span>
+      <span class="dev-credit" id="x7Dc"></span>
+    </footer>
+  </main>
+
+  <script src="license.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
